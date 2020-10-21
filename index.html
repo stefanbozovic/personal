@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stefan Bozovic</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="body" class="unselectable">
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top m-2">
+      <a class="navbar-brand" href="#home">
+        <img src="logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto d-flex justify-content-around w-100">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown d-none">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+  <div id="home" class="container-lg text-center mt-5 divhero">
+    <video id="videoo" width="200" height="200" onmouseover="playVideo()">
+      <source src="full video.mp4" type="video/mp4">
+      <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+    <h2>Hello, I am</h2>
+    <h1>Stefan Božović</h1>
+    <p>Student of Informational Technologies</p>
+      <button onclick="ScroolTo(aboutme)" class="neo mt-5">
+        Exlore more
+      </button>
+
+  </div>
+  <hr>
+  <div id="aboutme" class="container-lg text-center aboutme hero justify-content-between">
+    <h3>ABOUT ME</h3>
+    <p>I am a successful student of Informational Technologies. In my free time I work on projects that include
+      front-end development and UX design.
+      <br><br>
+      Experienced in:
+      <br>
+      HTML | CSS | JS | Adobe Photoshop | Adobe XD
+      <br> <br>
+      Key Skills:
+      <br>
+      Eager to learn | Attention in details | Research
+      <br>
+      <br>
+      <br>
+      <b>I enjoy creating high-quality products, working with people and learning new things.</b>
+      <br><br>
+      <a class="link" target="_blank"
+        href="https://drive.google.com/file/d/1lDMO3ospTZBSPdKwPXQn_3KsJujFu2mv/view?usp=sharing">
+        Find more information about me
+        in my CV
+      </a>
+  </div>
+  <hr>
+  <div id="projects" class="container-lg text-center aboutme hero justify-content-between">
+    <h3>PROJECTS</h3>
+    <div class="carousel scrolling-wrapper-flexbox ">
+
+      <div class="card1 ans grow cardpurple float-left">
+        <div class="cardcolor">
+          <button type="button" class="btn" data-toggle="modal" data-target="#firstproject">
+            <img src="play.png" alt="">
+          </button>
+          <p>
+            Answer Models
+          </p>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="firstproject" tabindex="-1" role="dialog" aria-labelledby="firstproject"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="firstproject">Answer Models</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="Answermodels/hero.png" alt="">
+              <p>
+                Answermodels is the first product of a startup company. They aim to create an application for creating
+                smart forms. I had the pleasure to work on the branding and UI&UX design of the application.
+              </p>
+              <p>
+                <br>
+                <br>
+                <img src="Answermodels/logo.png" alt="">
+              <h4>Logo</h4>
+              The idea of a logo came naturally. It symbolizes the pack of cards and the initial letters A and M. Logo
+              is ready to serve as an icon as well.
+              </p>
+              <p>
+                <br>
+                <br>
+                <img src="Answermodels/colors.png" alt="">
+              <h4>Colors and shapes</h4>
+              As the most seen picture of the product will be the application itself, we agreed on making it the center
+              of branding. Each element is crafted and designed to communicate the idea of the application.
+              <br>
+              The colors are a very important part of the application as their goal is to guide the user's behavior.
+              Following the requirements, I found the perfect color combination.
+              </p>
+              <p>
+                <br>
+                <br>
+                <img src="Answermodels/typography.png" alt="">
+              <h4>Typography</h4>
+              Two typefaces are used, one is Montserrat Alternative fontand Roboto font.
+              <br>
+              Montserrat Alternative font was a great choice for a logo's text because it matched the letters "a" and
+              "m" from the logo. It is a unique and not widely used typeface witch makes it a good choice for making the
+              logo more memorable.
+              <br>
+              On the other hand, Roboto became a complementary font. Because it is widely used it will create a sense of
+              familiarity.
+              </p>
+              <p>
+                <br>
+                <br>
+                <img src="Answermodels/wireframing.jpg" alt="">
+              <h4>UI and UX</h4>
+              The UI design was made following the company requirements. It looks familiar and intuitive, like Google's
+              material design. Unfortunately, because of the company's policy, this part of the project cannot be shown
+              yet.
+              </p>
+              <p class="f-16">
+                <br>
+                <br>
+                <video id="video2" autoplay muted>
+                  <source src="Answermodels/onhover.mp4" type="video/mp4">
+                  <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+                The second version of the logo is desaturated, combines perfectly with the clean design of the
+                application.
+              </p>
+
+              <br>
+              <br>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card1 logos grow  cardblue float-left">
+        <div class="cardcolor">
+          <button type="button" class="btn" data-toggle="modal" data-target="#secondproject">
+            <img src="play.png" alt="">
+          </button>
+          <p>
+            Logos
+          </p>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="secondproject" tabindex="-1" role="dialog" aria-labelledby="secondproject"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="secondproject">Logos</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="Logos/nt.png" alt="">
+              <img src="Logos/knjizarica.png" alt="">
+              <img src="Logos/pnd.png" alt="">
+              <img src="Logos/answermodels.png" alt="">
+              <img src="Logos/a marker logo.png" alt="">
+
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card1 markos grow cardgreen float-left">
+        <div class="cardcolor">
+          <button type="button" class="btn" data-toggle="modal" data-target="#thirdproject">
+            <img src="play.png" alt="">
+          </button>
+          <p>
+            A marker
+          </p>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="thirdproject" tabindex="-1" role="dialog" aria-labelledby="thirdproject"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="thirdproject">A marker</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <img src="A marker/desktop and mobile .png" alt="">
+                "A marker" is a non-commercial project developed for my personal use only.
+                It is, simply, a tool for marking paragraphs in three different colors.
+                <br>
+                <img src="A marker/a marker logo.png" alt="">
+                <h4>Logo</h4>
+                Letter A is the highest grade in schools. In order for "a marker" to become "A marker", I've combined
+                the persona icon with the letter A.
+                Round edges indicate the playfulness of the whole application.
+                <br><br><br><br>
+
+                <video id="video3" autoplay muted loop>
+                  <source src="A marker/explanation.mp4" type="video/mp4">
+                  <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+                <h4>Explanation</h4>
+                It is useful for keeping track of questions that need to be relearned or repeated. There are many
+                similar applications on the market. However, the beauty of programming is its unlimitedness.
+                <br><br><br><br>
+
+                <video id="video4" autoplay muted loop>
+                  <source src="A marker/features.mp4" type="video/mp4">
+                  <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+                <h4>Features</h4>
+                Nondistracting is the most important characteristic of "A marker". A few features are lightly built-in.
+                <br>
+                Motivational quotes are only appearing on the top of the screen for a short amount of time.
+                <br>
+                Buttons are indicating keyboard shortcuts that improve the user's experience.
+                <br>
+                Breathing animation is the most useful feature, and yet very rare to find in other similar applications.
+                While learning or reading, the most important technique is 5-second deep breathing. It is a great for
+                prolonging attention span, and for better understanding of the content.
+                With this simple animation, the subconscious mind can mimic the duration of the breath. While you can
+                continue paying attention to the learning.
+                <br><br><br><br>
+
+                <img src="A marker/5 minute break.png " alt="">
+                <br>
+                <h4>Break for 5 minutes</h4>
+                "The brain cannot focus on a single task for more than 25 minutes at a time." If you don't make a pause,
+                your brain will go into daydreaming.
+                When the timer ends, the screen is set to the background and lasts 5 minutes. The background is a
+                reminder to look outside and rest the eyes.
+                <br><br><br><br>
+
+                <br>
+                <a href="https://stefanbozovic.github.io/A-marker/" target="_blink">See a demo.
+                  Please note that this application is developed for a specific use, with no exceptions planned or
+                  programmed.
+                </a>
+                <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card1 expos grow cardorange float-left">
+        <div class="cardcolor">
+          <button type="button" class="btn" data-toggle="modal" data-target="#fourthproject">
+            <img src="play.png" alt="">
+          </button>
+          <p>
+            Experimental
+          </p>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="fourthproject" tabindex="-1" role="dialog" aria-labelledby="fourthproject"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="fourthproject">Experimental</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p> These are some shots that I've done for friends, school or myself.</p>
+              <img src="Experimental/time to shine.png" alt="">
+              <img src="Experimental/knjizarica.png" alt="">
+              <img src="Experimental/see you again.png" alt="">
+
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="secondproject" tabindex="-1" role="dialog" aria-labelledby="secondproject"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="secondproject">A marker</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="Logos/nt.png" alt="">
+              <img src="Logos/knjizarica.png" alt="">
+              <img src="Logos/pnd.png" alt="">
+              <img src="Logos/answermodels.png" alt="">
+
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card1 grow cardred float-left">
+        <div class="cardcolor">
+
+          <p>
+            I cannot wait for the next project.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <hr>
+  <div id="contact" class="container-lg text-center  contact hero justify-content-between">
+    <h3>CONTACT</h3>
+    <div class="d-flex flex-row justify-content-center">
+
+      <a target="_blank" href="https://www.linkedin.com/in/stefan-bo%C5%BEovi%C4%87-888219128/">
+        <button class="linkedin neobtn">
+          <i class="fa fa-linkedin"></i>
+        </button>
+      </a>
+      <a target="_blank" href="mailto:sbozovic204@gmail.com">
+        <button class="mail neobtn">
+          <i class="fa fa-envelope"></i>
+        </button>
+        <a target="_blank" href="https://github.com/stefanbozovic">
+          <button class="github neobtn">
+            <i class="fa fa-github"></i>
+          </button>
+
+        </a>
+    </div>
+    <img class="softlogo" src="logo.png" alt="">
+  </div>
+
+  <script>
+    function playVideo() {
+      var videoo = document.getElementById("videoo");
+      try { videoo.play(); }
+      catch (e) { console.log(e) }
+
+    } function playVideo2() {
+      var video2 = document.getElementById("video2");
+      try { video2.play(); }
+      catch (e) { console.log(e) }
+
+    }
+
+    function ScroolTo(con) {
+      con.scrollIntoView({ behavior: "smooth", block: "end" });
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

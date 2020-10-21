@@ -1,0 +1,363 @@
+html {
+  scroll-behavior: smooth !important;
+}
+#body {
+  background: #f5f4f6;
+
+  scroll-behavior: smooth !important;
+}
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+nav {
+  border-radius: 9px;
+  background: transparent;
+  backdrop-filter: blur(29px);
+  --webkit-backdrop-filter: blur(29px);
+  background-color: rgba(255, 255, 255, 0.73);
+  min-height: 45px;
+}
+.navbar {
+  border: 1px solid #ededed78;
+  box-shadow: 1px 1px 14px 0px #b4b4b405;
+}
+.hero {
+  min-height: 80vh;
+}
+.divhero {
+  height: 95vh;
+  padding-top: 80px;
+}
+.divhero h2 p {
+  opacity: 0.7;
+}
+.divhero h1 {
+  color: #1d1d1d;
+}
+.neo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #6b6b6b;
+  padding: 25px;
+  width: 250px;
+  border: 0px solid white;
+  border-radius: 26px;
+  background: #f5f4f6;
+  box-shadow: 10px 10px 20px #cfcfcf, -10px -10px 20px #ffffff;
+  transition-duration: 200ms;
+}
+.neo:hover {
+  box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
+}
+.aboutme p {
+  font-size: 19px;
+}
+.container-lg h3 {
+  margin-bottom: 50px;
+}
+
+.carousel {
+  padding-left: 20px;
+  height: 500px;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.card1 {
+  width: 200px;
+  height: 350px;
+  margin: auto;
+  margin-right: 20px;
+
+  border: 0px solid;
+  border-radius: 14px;
+
+  position: relative;
+
+  background-size: cover;
+  background-position: top;
+}
+.ans {
+  background-image: url(Answermodels/answermodels.png);
+}
+.logos {
+  background-image: url(Logos/cardback.png);
+}
+.markos {
+  background-image: url(A\ marker/amarkercard.png);
+}
+.expos {
+  background-image: url(Experimental/cardback.png);
+}
+.cardcolor {
+  width: 200px;
+  height: 350px;
+  background-color: rgba(0, 255, 255, 0.651);
+
+  border: 0px solid;
+  border-radius: 14px;
+
+  padding: 20px;
+  transition-duration: 1s;
+}
+.cardcolor:hover {
+  box-shadow: 0px 20px 30px -14px #4de5e5;
+}
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.scrolling-wrapper-flexbox .card1 {
+  flex: 0 0 auto;
+}
+.card1 p {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  filter: drop-shadow(0px 0px 21px rgba(0, 0, 0, 0.429));
+  position: absolute;
+  bottom: 0px;
+  text-align: left;
+}
+.card1 button {
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 54px;
+  border: 0px springgreen;
+  background-color: transparent;
+  background-color: #ffffff52;
+  --webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  margin-top: 65px;
+}
+
+.cardcolor {
+  transition-duration: 1s;
+}
+.cardcolor:hover {
+  cursor: pointer;
+  transition-duration: 1s;
+}
+.cardcolor .btn {
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.cardcolor:hover .btn {
+  animation-name: example;
+  animation-duration: 0.3s;
+  opacity: 1;
+}
+
+@keyframes example {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn img {
+  width: 40px;
+  height: 40px;
+  margin: -32px 1px;
+}
+
+.cardblue .cardcolor {
+  background-color: rgba(0, 102, 255, 0.808);
+}
+.cardblue .cardcolor:hover {
+  box-shadow: 0px 20px 30px -14px rgba(0, 102, 255, 0.808);
+}
+.cardred .cardcolor {
+  background-color: rgba(255, 0, 0, 0.808);
+}
+.cardred .cardcolor:hover {
+  box-shadow: 0px 20px 30px -14px rgba(255, 0, 0, 0.808);
+}
+.cardorange .cardcolor {
+  background-color: rgba(255, 153, 19, 0.808);
+}
+.cardorange .cardcolor:hover {
+  box-shadow: 0px 20px 30px -14px rgba(255, 153, 19, 0.808);
+}
+
+.cardgreen .cardcolor {
+  background-color: rgba(0, 255, 98, 0.808);
+}
+.cardgreen .cardcolor:hover {
+  box-shadow: 0px 20px 30px -14px rgba(0, 255, 98, 0.808);
+}
+.cardpurple .cardcolor {
+  background-color: rgba(119, 0, 255, 0.808);
+}
+.cardpurple .cardcolor:hover {
+  box-shadow: 0px 20px 30px -14px rgba(119, 0, 255, 0.808);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #dbdbdb;
+  width: 10px;
+  height: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(136, 136, 136);
+  border-radius: 10px;
+  width: 11px;
+  height: 11px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background: rgb(82, 82, 82);
+}
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.hero h3 {
+  padding-top: 60px;
+}
+.linkedin {
+  width: 80px;
+  margin: 20px;
+  height: 80px;
+  background-color: #f5f4f6;
+  border-radius: 50%;
+  position: relative;
+  border: 0px white;
+  color: rgb(0, 132, 255) !important;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.mail {
+  width: 80px;
+  margin: 20px;
+  height: 80px;
+  background-color: #f5f4f6;
+  border-radius: 50%;
+  position: relative;
+  border: 0px white;
+  color: rgb(233, 26, 12) !important;
+  font-weight: 600;
+  font-size: 26px;
+}
+.github {
+  width: 80px;
+  margin: 20px;
+  height: 80px;
+  background-color: #f5f4f6;
+  border-radius: 50%;
+  position: relative;
+  border: 0px white;
+  color: rgb(19, 19, 19) !important;
+  font-weight: 600;
+  font-size: 26px;
+}
+.linkedin a {
+  color: rgb(0, 132, 255) !important;
+}
+.mail a {
+  color: rgb(233, 26, 12) !important;
+}
+
+.github a {
+  color: rgb(19, 19, 19) !important;
+}
+.softlogo {
+  opacity: 0.5;
+  position: absolute;
+  bottom: 30px;
+}
+.contact {
+  min-height: 400px;
+
+  position: relative;
+}
+*,
+*:focus,
+*:hover {
+  outline: none !important;
+}
+
+.neobtn {
+  border: 0px solid white;
+  border-radius: 26px;
+  box-shadow: 10px 10px 20px #cfcfcf, -10px -10px 20px #ffffff;
+  transition-duration: 200ms;
+}
+
+.neobtn:hover {
+  box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
+}
+#projects {
+  min-height: 90vh;
+}
+.fade {
+  transition: opacity 0.15s linear !important;
+}
+.modal-content {
+  border-radius: 15px !important;
+  border: 0px solid white !important;
+  background: #f5f4f5 !important;
+}
+.modal {
+  background: #f5f4f5c9 !important;
+  padding: 0px !important;
+}
+
+#projects h3 {
+  margin-bottom: 0px;
+}
+.modal-body img {
+  width: 100%;
+}
+.modal-body video {
+  width: 100%;
+}
+
+.modal-body {
+  text-align: left;
+  background: #f8f8f8;
+  color: #333333e6;
+
+  border-bottom-right-radius: 43px;
+  border-bottom-left-radius: 43px;
+}
+.f-16 {
+  font-size: 16px !important;
+}
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+hr {
+  opacity: 0.5;
+}
