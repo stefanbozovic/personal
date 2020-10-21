@@ -366,3 +366,7 @@ nav {
 hr {
   opacity: 0.5;
 }
+
+video *{
+  background: transparent !important;
+}
